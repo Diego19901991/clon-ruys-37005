@@ -321,7 +321,7 @@ ul {
     border: 1px solid white;
     line-height: 90px;
     padding: 10px;
-    width: 20px;
+   /* width: 20px;*/
     height: 20px;
 }
 
@@ -369,7 +369,7 @@ ul {
 .informacion__diasyhorarios {
     font-size: 30px;
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
 
 }
 
@@ -599,6 +599,11 @@ ul {
 .section0 {
     background-color: blue;
     color: white;
+    text-align: justify;
+    padding: 30px 0;
+}
+
+.flexformulario {
     text-align: justify;
     padding: 30px 0;
 }
