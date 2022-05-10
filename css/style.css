@@ -266,15 +266,6 @@ ul {
 
 }
 
-.footer__logo {
-    height: 5%;
-    width: 5%;
-    object-fit: cover;
-    border-radius: 90px;
-    margin-top: 1rem;
-
-}
-
 .parrafo__ds {
     text-align: center;
     font-size: 12px;
@@ -608,6 +599,10 @@ ul {
     padding: 30px 0;
 }
 
+.carousel {
+    padding: 10px 0;
+    
+}
 
 @media screen and (max-width: 1024px) {
     .seccion {
