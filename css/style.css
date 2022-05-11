@@ -489,6 +489,8 @@ ul {
 .imagenes {
     width: 100%;
     padding: 1rem;
+    align-self: center;
+
 
 }
 
@@ -601,10 +603,10 @@ ul {
 
 .carousel {
     padding: 10px 0;
-    
+    height: 400px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
     .seccion {
         display: flex;
         
@@ -673,6 +675,7 @@ ul {
 
     #lateral:target {
         left: 0;
+
     }
 
     .nav__lista {
@@ -689,6 +692,8 @@ ul {
     .nombre {
         margin-right: 6rem;
     }
+
+
 
 
 }
