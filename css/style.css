@@ -108,7 +108,7 @@ ul {
 }
 
 .seccion__flex {
-    /*width: 100%;*/
+    width: 100%;
     border: 1px solid grey;
     padding: 1rem;
     background-color: blue;
@@ -158,6 +158,7 @@ ul {
     font-weight: bolder;
     font-size: 20px;
     margin-bottom: 3rem;
+
 }
 
 .seccion__conocenos {
@@ -186,8 +187,8 @@ ul {
 }
 
 
-.seccion1 {
-    /*width: 100%;*/
+.seccion1__flex {
+    width: 100%;
     border: 1px solid grey;
     padding: 1rem;
     background-color: blue;
@@ -215,7 +216,7 @@ ul {
     border: none;
     color: white;
     width: 600px;
-    height: 350px;
+    height: 400px;
     text-align: center;
 }
 
@@ -389,6 +390,7 @@ ul {
     align-items: flex-start;
 
     flex-wrap: wrap;
+    color: white;
 
 }
 
@@ -410,6 +412,12 @@ ul {
 
 }
 
+.fondo {
+    background-image: url(../imagenes/beatuful.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
 .video {
     /*min-height: 500px;*/
     width: 100%;
@@ -423,6 +431,7 @@ ul {
     padding: 3rem;
     min-height: 800px;
     background-color: white;
+    background-image: url(../imagenes/waves.jpg);
 
     display: grid;
     grid-template-columns: 100px 100px;
@@ -448,6 +457,7 @@ ul {
 
 .grid__aprender {
     border: 1px solid white;
+    border: 1px solid #003057;
     padding: 1rem;
     padding: 0;
     color: black;
@@ -496,9 +506,11 @@ ul {
 
 .grid1 {
     border: 2px solid white;
+    border: #477591;
     padding: 2rem;
     min-height: 500px;
     background-color: white;
+    background-color: #477591;
 
     display: grid;
     grid-template-columns: 25% 50% 25%;
@@ -528,6 +540,7 @@ ul {
 
 .grid1__galeria {
     border: 1px solid #003057;
+    border: 1px solid white;
     padding: 1rem;
     padding: 0;
     color: black;
@@ -604,7 +617,40 @@ ul {
 .carousel {
     padding: 10px 0;
     height: 400px;
+    color: white;
+
 }
+
+.carousel-inner {
+    border: 0.11rem solid white;
+}
+
+.nuestracultura {
+    padding: 1rem;
+    text-align: center;
+}
+
+.turismo {
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+.container-fluid {
+    background-color: #FFC900;
+    
+}
+
+.card {
+    border: 1px solid #003057;
+    margin-bottom: 1rem;
+}
+
+.mainfondocolor {
+    background-color: #477591;
+    background-size: cover;
+    background-position: center;
+}
+
 
 @media screen and (max-width: 1023px) {
     .seccion {
@@ -624,13 +670,17 @@ ul {
 
     .nombre__logo {
         font-size: 12px;
+        text-align: center;
+
         
     }
 
     .nombre__logo1 {
         font-size: 12px;
+        text-align: center;
     }
-    
+
+
 }
 
 @media screen and (max-width: 600px) {
