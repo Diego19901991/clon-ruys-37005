@@ -1,0 +1,88 @@
+.seccion__flex {
+    width: 100%;
+    border: 1px solid grey;
+    padding: 1rem;
+    background-color: blue;
+    color:white;
+    min-height: 500px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    /*align-items: flex-end;*/
+
+    /*flex-wrap: wrap;*/
+    /*flex-flow: row wrap;*/
+    /*align-content: center;*/ 
+
+    background-image: url(../imagenes/imagen.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin-bottom: 0.2rem;
+
+}
+
+.seccion__item {
+    border: 1px solid orange;
+    border: none;
+    color: white;
+    width: 600px;
+    height: 400px;
+    text-align: center;
+}
+
+.seccion__titulo {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.seccion__parrafo {
+    color: #FFF9EE;
+    font-weight: bold;
+    text-align: justify;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-bottom: 3rem;
+
+}
+
+.seccion__conocenos {
+    border: 2px solid gold;
+    background-color: gold;
+    color: black;
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    border-radius: 2rem;
+    margin-bottom: 4rem;
+    overflow: hidden;
+
+}
+
+.seccion__titulo--1 {
+    align-self: flex-end;
+
+}
+
+.seccion__parrafo--2 {
+    align-self: flex-end;
+}
+
+.section0 {
+    background-color: blue;
+    color: white;
+    text-align: justify;
+    padding: 30px 0;
+}
+
+
+

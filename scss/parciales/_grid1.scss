@@ -1,0 +1,114 @@
+.galeria {
+    background-image: url(../imagenes/descarga.jpg);
+    background-image: url(../imagenes/sensacion.jpg);
+    background-image: url(../imagenes/escuela.jpg);
+    background-image: url(../imagenes/nombreDeImagenEscuelaNumeroUno.jpg);
+    background-image: url(../imagenes/nombreDeImagenEscuelaNumeroDos.jpg);
+
+    min-height: 300px;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    /*overflow: hidden; controlar el desborde del contenido*/
+    margin-top: 1rem;
+    margin-left: 1rem;
+    
+    
+}
+
+.grid1 {
+    border: 2px solid white;
+    border: #477591;
+    padding: 2rem;
+    min-height: 500px;
+    background-color: white;
+    background-color: #477591;
+
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-rows: 100px 200px 100px;
+    grid-template-rows: 25% 25% 100px;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+
+    grid-template-areas: 
+      "ele1 ele2 ele2" 
+      "ele3 ele3 ele4" 
+      "ele5 ele6 ele4";
+
+      justify-items: stretch;
+      align-items: stretch;
+
+      justify-content: flex-start;
+      align-content: flex-start;
+      column-gap: 10px;
+      row-gap: 20px;
+      gap: 10px 20px;
+}
+
+.grid1__galeria {
+    border: 1px solid #003057;
+    border: 1px solid white;
+    padding: 1rem;
+    padding: 0;
+    color: black;
+    text-align: center;
+
+}
+
+.grid1__galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.grid1__galeria--1 {
+    grid-area: ele1;
+
+}
+
+.grid1__galeria--2 {
+    grid-area: ele2;
+
+}
+
+.grid1__galeria--3 {
+    grid-area: ele3;
+
+}
+
+.grid1__galeria--4 {
+    grid-area: ele4;
+    align-self: stretch;
+    justify-self: stretch;
+
+}
+
+.grid1__galeria--5 {
+    grid-area: ele5;
+
+}
+
+.grid1__galeria--6 {
+    grid-area: ele6;
+
+}
+
+.imagenes {
+    width: 100%;
+    padding: 1rem;
+    align-self: center;
+
+
+}
+
+.mainfondocolor {
+    background-color: #477591;
+    background-size: cover;
+    background-position: center;
+}

@@ -1,755 +1,653 @@
+/* este es mi archivo principal de SASS */
+/* importando todos los parciales de mis estilos */
+/* aclaracion es importante el orden de importacion */
+/* como creo una variable en SASS:
+Sintaxis de como escribir una variable
+$mivariable1: valorReutilizar;
+*/
+/*.header {
+    color: $color-principal;
+}
+
+.footer {
+    color: $color-principal;
+}*/
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /*@font-face {
     font-family: 'raleway';
     src: url(../css/Raleway-Light.ttf);
 }*/
-
 body {
-   /* min-height: 100vh;
+  /* min-height: 100vh;
     width: 100%;*/
-    background-color: white;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-
+  background-color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 ul {
-    margin-bottom: 0;
-    padding-left: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 .section {
-    /*min-width: 500px;*/
-    width: 100%;
-    
+  /*min-width: 500px;*/
+  width: 100%;
+  /*min-height: 100vh;*/
 }
 
 .header {
-    background-color: #003057;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
+  background-color: #003057;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.header__marca {
-    width: 100px;
-    height: 100px;
-
-    
+.header .header__marca {
+  width: 100px;
+  height: 100px;
 }
 
-.header__logo {
-    height: 70%;
-    width: 70%;
-    object-fit: cover;
-    border-radius: 90px;
-    margin-top: 1rem;
-    margin-left: 1rem;
+.header .header__logo {
+  height: 70%;
+  width: 70%;
+  object-fit: cover;
+  border-radius: 90px;
+  margin-top: 1rem;
+  margin-left: 1rem;
 }
-
 
 .nombre {
-    border: 1px solid orange;
-    border: none;
-    color: grey;
-    width: 200px;
-    height: 50px;
-    margin-right: 42rem;
-
+  border: 1px solid orange;
+  border: none;
+  color: grey;
+  width: 200px;
+  height: 50px;
+  margin-right: 42rem;
 }
 
 .nombre__logo {
-    font-size: medium;
-    text-align: center;
-    font-size: 18px;
-    font-style: italic;
-    text-align: left;
-    
+  font-size: medium;
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+  text-align: left;
 }
 
 .nombre__logo1 {
-    font-size: medium;
-    text-align: center;
-    font-size: 18px;
-    font-style: italic;
-    text-align: left;
-    
+  font-size: medium;
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+  text-align: left;
 }
 
 .nav {
-    padding: 1rem;
-    
+  padding: 1rem;
 }
 
 .nav__lista {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    /*gap: 16px;*/
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /*gap: 16px;*/
 }
 
 .nav__item {
-    margin-left: 16px;
+  margin-left: 16px;
 }
 
 .nav__enlace {
-    color: white;
-    text-decoration: none;
-}
-
-.seccion__flex {
-    width: 100%;
-    border: 1px solid grey;
-    padding: 1rem;
-    background-color: blue;
-    color:white;
-    min-height: 500px;
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    /*align-items: flex-end;*/
-
-    /*flex-wrap: wrap;*/
-    /*flex-flow: row wrap;*/
-    /*align-content: center;*/ 
-
-    background-image: url(../imagenes/imagen.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    margin-bottom: 0.2rem;
-
-}
-
-.seccion__item {
-    border: 1px solid orange;
-    border: none;
-    color: white;
-    width: 600px;
-    height: 400px;
-    text-align: center;
-}
-
-.seccion__titulo {
-    color: white;
-    text-align: center;
-    font-size: 30px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-
-}
-
-.seccion__parrafo {
-    color: #FFF9EE;
-    font-weight: bold;
-    text-align: justify;
-    font-weight: bolder;
-    font-size: 20px;
-    margin-bottom: 3rem;
-
-}
-
-.seccion__conocenos {
-    border: 2px solid gold;
-    background-color: gold;
-    color: black;
-    width: 300px;
-    height: 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    position: relative;
-    border-radius: 2rem;
-    margin-bottom: 4rem;
-    overflow: hidden;
-
-}
-
-.seccion__titulo--1 {
-    align-self: flex-end;
-
-}
-
-.seccion__parrafo--2 {
-    align-self: flex-end;
-}
-
-
-.seccion1__flex {
-    width: 100%;
-    border: 1px solid grey;
-    padding: 1rem;
-    background-color: blue;
-    color:white;
-    min-height: 500px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    /*align-items: flex-end;*/
-
-    /*flex-wrap: wrap;
-    flex-flow: column wrap;
-    align-content: center;*/ 
-
-    background-image: url(../imagenes/nombreDeImagenEscuelaNumeroDos.jpg);
-    background-size: cover;
-    background-attachment: local;
-
-    
-}
-
-.seccion1__item {
-    border: 1px solid orange;
-    border: none;
-    color: white;
-    width: 600px;
-    height: 400px;
-    text-align: center;
-}
-
-.seccion1__titulo {
-    color: white;
-    text-align: center;
-    font-size: 30px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-.seccion1__parrafo {
-    color: white;
-    font-weight: bold;
-    text-align: justify;
-    font-weight: bolder;
-    font-size: 20px;
-    margin-bottom: 3rem;
-
-}
-
-.seccion1__ReservaTuClase {
-    border: 2px solid gold;
-    background-color: gold;
-    color: black;
-    width: 300px;
-    height: 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    position: relative;
-    border-radius: 2rem;
-    margin-bottom: 4rem;
-    overflow: hidden;
-
-}
-
-.footer {
-    background-color: #003057;
-    color: white;
-    padding: 1rem;
-
-}
-
-.footer__marca {
-    width: 100px;
-    height: 100px;
-
-}
-
-.parrafo__ds {
-    text-align: center;
-    font-size: 12px;
-    font-style: normal;
-    
-
-}
-
-.galeria {
-    background-image: url(../imagenes/descarga.jpg);
-    background-image: url(../imagenes/sensacion.jpg);
-    background-image: url(../imagenes/escuela.jpg);
-    background-image: url(../imagenes/nombreDeImagenEscuelaNumeroUno.jpg);
-    background-image: url(../imagenes/nombreDeImagenEscuelaNumeroDos.jpg);
-
-    min-height: 300px;
-    width: 50%;
-    height: 50%;
-    object-fit: cover;
-    /*overflow: hidden; controlar el desborde del contenido*/
-    margin-top: 1rem;
-    margin-left: 1rem;
-    
-    
-}
-
-.flex {
-    border: 2px solid white;
-    padding: 1rem;
-    min-width: 500px;
-
-    display: flex;
-
-    flex-direction: column;
-    justify-content: space-between;
-
-    align-items: center;
-
-    flex-wrap: wrap;
-
-}
-
-.flex__hijo {
-    border: 1px solid white;
-    line-height: 90px;
-    padding: 10px;
-   /* width: 20px;*/
-    height: 20px;
-}
-
-.flex__hijo1 {
-    border: 2px solid black;
-    width: 300px;
-    height: 30px;
-    text-align: center;
-    
-}
-
-.flex__hijo2 {
-    border: 1px solid black;
-}
-
-.flex__enviar {
-    border: 2px solid gold;
-    background-color: gold;
-    color: black;
-    width: 300px;
-    height: 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    position: relative;
-    border-radius: 2rem;
-    margin-top: 32px;
-    margin-bottom: 32px;
-
-}
-
-.informacion {
-    background-color: #003057;
-    color: white;
-    min-height: 200px;
- 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(to top, red, yellow);
-    
-}
-
-.informacion__diasyhorarios {
-    font-size: 30px;
-    margin-top: 2rem;
-    margin-bottom: 0.5rem;
-
-}
-
-.informacion_parrafo {
-    font-style: italic;
-    font-size: 30;
-    
-}
-
-.clases {
-    margin: 1rem;
-}
-
-.contacto {
-    padding: 1rem;
-    min-width: 300px;
-    padding: 1rem;
-    margin-left: 1rem;
-    align-items: center;
-
-    display: flex;
-
-    flex-direction: column;
-    justify-content: space-between;
-
-    align-items: flex-start;
-
-    flex-wrap: wrap;
-    color: white;
-
-}
-
-.contacto1__enviar {
-        border: 2px solid gold;
-        background-color:gold;
-        color: black;
-        width: 300px;
-        height: 30px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        position: relative;
-        border-radius: 2rem;
-        margin-top: 32px;
-        margin-bottom: 32px;
-        margin-left: 1rem;
-        overflow: hidden;
-
-}
-
-.fondo {
-    background-image: url(../imagenes/beatuful.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.video {
-    /*min-height: 500px;*/
-    width: 100%;
-    padding: 1rem;
-
-}
-
-
-.grid {
-    border: 2px solid white;
-    padding: 3rem;
-    min-height: 800px;
-    background-color: white;
-    background-image: url(../imagenes/waves.jpg);
-
-    display: grid;
-    grid-template-columns: 100px 100px;
-    /*grid-template-columns: repeat(2, 1fr);*/
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100px 100px;
-    /*grid-template-rows: 1fr 2fr;*/
-    grid-template-rows: 50% 50%;
-
-    grid-template-areas: 
-      "ele1 ele1" 
-      "ele2 ele2";
-
-      justify-items: stretch;
-      align-items: stretch;
-
-      justify-content: space-around;
-      align-content: space-between;
-      column-gap: 10px;
-      row-gap: 20px;
-      gap: 10px 20px;
-}
-
-.grid__aprender {
-    border: 1px solid white;
-    border: 1px solid #003057;
-    padding: 1rem;
-    padding: 0;
-    color: black;
-    text-align: center;
-
-}
-
-.grid__video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-}
-
-.grid__aprender--1 {
-    background-color: white;
-    background: none;
-
-}
-
-.grid__aprender--2 {
-    background-color: cyan;
-    background: none;
-
-}
-
-.grid__aprender--3 {
-    background-color: blue;
-    background: none;
-
-}
-
-.grid__liga--4 {
-    background-color: orange;
-    background: none;
-
-}
-
-.imagenes {
-    width: 100%;
-    padding: 1rem;
-    align-self: center;
-
-
-}
-
-.grid1 {
-    border: 2px solid white;
-    border: #477591;
-    padding: 2rem;
-    min-height: 500px;
-    background-color: white;
-    background-color: #477591;
-
-    display: grid;
-    grid-template-columns: 25% 50% 25%;
-    grid-template-columns: repeat(3, 100px);
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-
-    grid-template-rows: 100px 200px 100px;
-    grid-template-rows: 25% 25% 100px;
-    grid-template-rows: 1fr 2fr 1fr;
-    grid-template-rows: 200px 200px 200px;
-
-    grid-template-areas: 
-      "ele1 ele2 ele2" 
-      "ele3 ele3 ele4" 
-      "ele5 ele6 ele4";
-
-      justify-items: stretch;
-      align-items: stretch;
-
-      justify-content: flex-start;
-      align-content: flex-start;
-      column-gap: 10px;
-      row-gap: 20px;
-      gap: 10px 20px;
-}
-
-.grid1__galeria {
-    border: 1px solid #003057;
-    border: 1px solid white;
-    padding: 1rem;
-    padding: 0;
-    color: black;
-    text-align: center;
-
-}
-
-.grid1__galeria img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-}
-
-.grid1__galeria--1 {
-    grid-area: ele1;
-
-}
-
-.grid1__galeria--2 {
-    grid-area: ele2;
-
-}
-
-.grid1__galeria--3 {
-    grid-area: ele3;
-
-}
-
-.grid1__galeria--4 {
-    grid-area: ele4;
-    align-self: stretch;
-    justify-self: stretch;
-
-}
-
-.grid1__galeria--5 {
-    grid-area: ele5;
-
-}
-
-.grid1__galeria--6 {
-    grid-area: ele6;
-
+  color: white;
+  text-decoration: none;
 }
 
 .header__open {
-    display: none;
-
+  display: none;
 }
 
 .nav__item--close {
-    display: none;
+  display: none;
+}
+
+.footer {
+  background-color: #003057;
+  color: white;
+  padding: 1rem;
+}
+
+.footer__marca {
+  width: 100px;
+  height: 100px;
+}
+
+.parrafo__ds {
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
 }
 
 .footer__redes {
-    text-decoration: none;
-    color: white;
-    padding-left: 70rem;
+  text-decoration: none;
+  color: white;
+  padding-left: 70rem;
+}
+
+.seccion__flex {
+  width: 100%;
+  border: 1px solid grey;
+  padding: 1rem;
+  background-color: blue;
+  color: white;
+  min-height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  /*align-items: flex-end;*/
+  /*flex-wrap: wrap;*/
+  /*flex-flow: row wrap;*/
+  /*align-content: center;*/
+  background-image: url(../imagenes/imagen.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin-bottom: 0.2rem;
+}
+
+.seccion__item {
+  border: 1px solid orange;
+  border: none;
+  color: white;
+  width: 600px;
+  height: 400px;
+  text-align: center;
+}
+
+.seccion__titulo {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.seccion__parrafo {
+  color: #FFF9EE;
+  font-weight: bold;
+  text-align: justify;
+  font-weight: bolder;
+  font-size: 20px;
+  margin-bottom: 3rem;
+}
+
+.seccion__conocenos {
+  border: 2px solid gold;
+  background-color: gold;
+  color: black;
+  width: 300px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  border-radius: 2rem;
+  margin-bottom: 4rem;
+  overflow: hidden;
+}
+
+.seccion__titulo--1 {
+  align-self: flex-end;
+}
+
+.seccion__parrafo--2 {
+  align-self: flex-end;
 }
 
 .section0 {
-    background-color: blue;
-    color: white;
-    text-align: justify;
-    padding: 30px 0;
+  background-color: blue;
+  color: white;
+  text-align: justify;
+  padding: 30px 0;
+}
+
+.seccion1__flex {
+  width: 100%;
+  border: 1px solid grey;
+  padding: 1rem;
+  background-color: blue;
+  color: white;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /*align-items: flex-end;*/
+  /*flex-wrap: wrap;
+    flex-flow: column wrap;
+    align-content: center;*/
+  background-image: url(../imagenes/nombreDeImagenEscuelaNumeroDos.jpg);
+  background-size: cover;
+  background-attachment: local;
+}
+
+.seccion1__item {
+  border: 1px solid orange;
+  border: none;
+  color: white;
+  width: 600px;
+  height: 400px;
+  text-align: center;
+}
+
+.seccion1__titulo {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.seccion1__parrafo {
+  color: white;
+  font-weight: bold;
+  text-align: justify;
+  font-weight: bolder;
+  font-size: 20px;
+  margin-bottom: 3rem;
+}
+
+.seccion1__ReservaTuClase {
+  border: 2px solid gold;
+  background-color: gold;
+  color: black;
+  width: 300px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  border-radius: 2rem;
+  margin-bottom: 4rem;
+  overflow: hidden;
+}
+
+.flex {
+  border: 2px solid white;
+  padding: 1rem;
+  min-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flex__hijo {
+  border: 1px solid white;
+  line-height: 90px;
+  padding: 10px;
+  /* width: 20px;*/
+  height: 20px;
+}
+
+.flex__hijo1 {
+  border: 2px solid black;
+  width: 300px;
+  height: 30px;
+  text-align: center;
+}
+
+.flex__hijo2 {
+  border: 1px solid black;
+}
+
+.flex__enviar {
+  border: 2px solid gold;
+  background-color: gold;
+  color: black;
+  width: 300px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  border-radius: 2rem;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.informacion {
+  background-color: #003057;
+  color: white;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to top, red, yellow);
+}
+
+.informacion__diasyhorarios {
+  font-size: 30px;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.informacion_parrafo {
+  font-style: italic;
+  font-size: 30;
 }
 
 .flexformulario {
-    text-align: justify;
-    padding: 30px 0;
+  text-align: justify;
+  padding: 30px 0;
+}
+
+.clases {
+  margin: 1rem;
+}
+
+.grid {
+  border: 2px solid white;
+  padding: 3rem;
+  min-height: 800px;
+  background-color: white;
+  background-image: url(../imagenes/waves.jpg);
+  display: grid;
+  grid-template-columns: 100px 100px;
+  /*grid-template-columns: repeat(2, 1fr);*/
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100px 100px;
+  /*grid-template-rows: 1fr 2fr;*/
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "ele1 ele1"  "ele2 ele2";
+  justify-items: stretch;
+  align-items: stretch;
+  justify-content: space-around;
+  align-content: space-between;
+  column-gap: 10px;
+  row-gap: 20px;
+  gap: 10px 20px;
+}
+
+.grid__aprender {
+  border: 1px solid white;
+  border: 1px solid #003057;
+  padding: 1rem;
+  padding: 0;
+  color: black;
+  text-align: center;
+}
+
+.grid__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid__aprender--1 {
+  background-color: white;
+  background: none;
+}
+
+.grid__aprender--2 {
+  background-color: cyan;
+  background: none;
+}
+
+.grid__aprender--3 {
+  background-color: blue;
+  background: none;
+}
+
+.grid__liga--4 {
+  background-color: orange;
+  background: none;
+}
+
+.video {
+  /*min-height: 500px;*/
+  width: 100%;
+  padding: 1rem;
 }
 
 .carousel {
-    padding: 10px 0;
-    height: 400px;
-    color: white;
-
+  padding: 10px 0;
+  height: 400px;
+  color: white;
 }
 
 .carousel-inner {
-    border: 0.11rem solid white;
+  border: 0.11rem solid white;
 }
 
 .nuestracultura {
-    padding: 1rem;
-    text-align: center;
+  padding: 1rem;
+  text-align: center;
 }
 
 .turismo {
-    margin-top: 1rem;
-    text-align: justify;
+  margin-top: 1rem;
+  text-align: justify;
 }
 
 .container-fluid {
-    background-color: #FFC900;
-    
+  background-color: #FFC900;
 }
 
 .card {
-    border: 1px solid #003057;
-    margin-bottom: 1rem;
+  border: 1px solid #003057;
+  margin-bottom: 1rem;
+}
+
+.galeria {
+  background-image: url(../imagenes/descarga.jpg);
+  background-image: url(../imagenes/sensacion.jpg);
+  background-image: url(../imagenes/escuela.jpg);
+  background-image: url(../imagenes/nombreDeImagenEscuelaNumeroUno.jpg);
+  background-image: url(../imagenes/nombreDeImagenEscuelaNumeroDos.jpg);
+  min-height: 300px;
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  /*overflow: hidden; controlar el desborde del contenido*/
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.grid1 {
+  border: 2px solid white;
+  border: #477591;
+  padding: 2rem;
+  min-height: 500px;
+  background-color: white;
+  background-color: #477591;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px 200px 100px;
+  grid-template-rows: 25% 25% 100px;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-rows: 200px 200px 200px;
+  grid-template-areas: "ele1 ele2 ele2"  "ele3 ele3 ele4"  "ele5 ele6 ele4";
+  justify-items: stretch;
+  align-items: stretch;
+  justify-content: flex-start;
+  align-content: flex-start;
+  column-gap: 10px;
+  row-gap: 20px;
+  gap: 10px 20px;
+}
+
+.grid1__galeria {
+  border: 1px solid #003057;
+  border: 1px solid white;
+  padding: 1rem;
+  padding: 0;
+  color: black;
+  text-align: center;
+}
+
+.grid1__galeria img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid1__galeria--1 {
+  grid-area: ele1;
+}
+
+.grid1__galeria--2 {
+  grid-area: ele2;
+}
+
+.grid1__galeria--3 {
+  grid-area: ele3;
+}
+
+.grid1__galeria--4 {
+  grid-area: ele4;
+  align-self: stretch;
+  justify-self: stretch;
+}
+
+.grid1__galeria--5 {
+  grid-area: ele5;
+}
+
+.grid1__galeria--6 {
+  grid-area: ele6;
+}
+
+.imagenes {
+  width: 100%;
+  padding: 1rem;
+  align-self: center;
 }
 
 .mainfondocolor {
-    background-color: #477591;
-    background-size: cover;
-    background-position: center;
+  background-color: #477591;
+  background-size: cover;
+  background-position: center;
 }
 
+.contacto {
+  padding: 1rem;
+  min-width: 300px;
+  padding: 1rem;
+  margin-left: 1rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.contacto1__enviar {
+  border: 2px solid gold;
+  background-color: gold;
+  color: black;
+  width: 300px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  border-radius: 2rem;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: 1rem;
+  overflow: hidden;
+}
+
+.fondo {
+  background-image: url(../imagenes/beatuful.jpg);
+  background-size: cover;
+  background-position: center;
+}
 
 @media screen and (max-width: 1023px) {
-    .seccion {
-        display: flex;
-        
-    }
-
-    .header {
-        background-color: #CDB091;
-        flex-direction: column;
-    }
-
-    .nombre {
-        margin-right: -5rem;
-
-    }
-
-    .nombre__logo {
-        font-size: 12px;
-        text-align: center;
-
-        
-    }
-
-    .nombre__logo1 {
-        font-size: 12px;
-        text-align: center;
-    }
-
-
+  .seccion {
+    display: flex;
+  }
+  .header {
+    background-color: #CDB091;
+    flex-direction: column;
+  }
+  .nombre {
+    margin-right: -5rem;
+  }
+  .nombre__logo {
+    font-size: 12px;
+    text-align: center;
+  }
+  .nombre__logo1 {
+    font-size: 12px;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .seccion {
-        display: flex;
-        height: 100vh;
-    }
-
-    .header {
-        background-color: gold;
-        flex-direction: row;
-    }
-
-    .nav {
-        display: none;
-    }
-
-    .header__open {
-        display: block;
-        font-size: 32px;
-        color: white;
-        text-decoration: none;
-    
-    }
-
-    .footer {
-        flex-direction: column;
-    }
-
-    #lateral {
-        display: block;
-        background-color: rgba(0, 0, 0, 0.8);
-        width: 80%;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: -100%;
-        z-index: 100;
-        transition: left 1s;
-
-    }
-
-    #lateral:target {
-        left: 0;
-
-    }
-
-    .nav__lista {
-        height: 40%;
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .nav__item--close {
-        display: block;
-        color: white;
-    }
-
-    .nombre {
-        margin-right: 6rem;
-    }
-
-
-
-
+  .seccion {
+    display: flex;
+    height: 100vh;
+  }
+  .header {
+    background-color: gold;
+    flex-direction: row;
+  }
+  .nav {
+    display: none;
+  }
+  .header__open {
+    display: block;
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  #lateral {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 100;
+    transition: left 1s;
+  }
+  #lateral:target {
+    left: 0;
+  }
+  .nav__lista {
+    height: 40%;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .nav__item--close {
+    display: block;
+    color: white;
+  }
+  .nombre {
+    margin-right: 6rem;
+  }
 }
-
-
-
 
 /*}
 .grey {
@@ -759,21 +657,16 @@ ul {
 #blue {
     color:blue;
 }*/
-
-    /* display: flex;
+/* display: flex;
     flex-direction: row;
     justify-content: flex-end;*/
-
-    /* flex-wrap: wrap;
+/* flex-wrap: wrap;
     flex-flow: row nowrap; es igual a flex-direction flex-wrap*/
-    /*align-content: center; solo va a funcionar si tengo aplicado flex-wrap: wrap;
+/*align-content: center; solo va a funcionar si tengo aplicado flex-wrap: wrap;
 }*/
-
 /* .underline {
     text-decoration: none;
 }*/
-
-
 /*}
 
 .seccion__imagen {
@@ -789,7 +682,6 @@ ul {
     text-align: center;
     margin-bottom: 1rem; 
     padding-top: 0;*/
-
 /*}
 
 .seccion__parrafo {
@@ -798,8 +690,6 @@ ul {
     margin-bottom: 1rem;
 
 }*/
-
-
 /* height: 200px;
 min-width: 400px;
 
@@ -829,4 +719,4 @@ margin: 0px 100px 100px 0px;
 overflow: hidden;
 
 display: flexbox;*/
-
+/*# sourceMappingURL=style.css.map */

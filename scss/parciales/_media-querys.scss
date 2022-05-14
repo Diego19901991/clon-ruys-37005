@@ -1,0 +1,178 @@
+@media screen and (max-width: 1023px) {
+    .seccion {
+        display: flex;
+        
+    }
+
+    .header {
+        background-color: #CDB091;
+        flex-direction: column;
+    }
+
+    .nombre {
+        margin-right: -5rem;
+
+    }
+
+    .nombre__logo {
+        font-size: 12px;
+        text-align: center;
+
+        
+    }
+
+    .nombre__logo1 {
+        font-size: 12px;
+        text-align: center;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .seccion {
+        display: flex;
+        height: 100vh;
+    }
+
+    .header {
+        background-color: gold;
+        flex-direction: row;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .header__open {
+        display: block;
+        font-size: 32px;
+        color: white;
+        text-decoration: none;
+    
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    #lateral {
+        display: block;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 100;
+        transition: left 1s;
+
+    }
+
+    #lateral:target {
+        left: 0;
+
+    }
+
+    .nav__lista {
+        height: 40%;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav__item--close {
+        display: block;
+        color: white;
+    }
+
+    .nombre {
+        margin-right: 6rem;
+    }
+
+
+
+
+}
+
+
+
+
+/*}
+.grey {
+    color:grey;
+}
+
+#blue {
+    color:blue;
+}*/
+
+    /* display: flex;
+    flex-direction: row;
+    justify-content: flex-end;*/
+
+    /* flex-wrap: wrap;
+    flex-flow: row nowrap; es igual a flex-direction flex-wrap*/
+    /*align-content: center; solo va a funcionar si tengo aplicado flex-wrap: wrap;
+}*/
+
+/* .underline {
+    text-decoration: none;
+}*/
+
+
+/*}
+
+.seccion__imagen {
+    /*width: 300px;
+    height: 200px;
+    object-fit: cover;
+    padding: 16px;
+    border-radius: 30px;*/
+/*}
+
+.seccion__titulo {
+   /* font-size: 26px;
+    text-align: center;
+    margin-bottom: 1rem; 
+    padding-top: 0;*/
+
+/*}
+
+.seccion__parrafo {
+    /*font-size: 15px;
+    text-align: center;
+    margin-bottom: 1rem;
+
+}*/
+
+
+/* height: 200px;
+min-width: 400px;
+
+padding: 16px;
+padding: 16px 32px;
+padding: 16px 32px 50px;
+padding: 16px 32px 50px 0px;
+
+padding-top: 16px;
+padding-right: 16px;
+padding-bottom: 16px;
+padding-left: 16px;
+
+border: 5px solid blue;
+border: 5px double orange;
+
+border-top: 10px solid yellow;
+border-right: 10px solid brown;
+border-bottom: 10px solid red;
+border-left: 10px solid black;
+border-radius: 16px;
+
+border: none;
+
+margin: 0px 100px 100px 0px;
+
+overflow: hidden;
+
+display: flexbox;*/
+
