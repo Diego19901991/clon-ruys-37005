@@ -40,3 +40,50 @@
     background-size: cover;
     background-position: center;
 }
+
+
+.contenido {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    
+}
+
+.cristo {
+    width: 100%;
+    height: 100%;
+    transition: transform 2s;
+    object-fit: cover;
+  }
+
+/*.contenido:hover img {
+    transform: scale(1.5);
+}*/
+
+  .animacion {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    animation-name: diego;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+    animation-timing-function: ease-in-out;
+    animation-delay: 5s;
+
+  }
+
+  @keyframes diego {
+    0% {
+        transform: rotate(0deg);
+      }
+    
+      50% {
+        transform: rotate(180deg);
+      }
+    
+      100% {
+        transform: rotate(0deg);
+      }
+
+  }
