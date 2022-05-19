@@ -18,74 +18,54 @@
 <body>
 
     <header class="header">
-    <a class="header__marca" href="index.html">
+     <a class="header__marca" href="index.html">
          <img class="header__logo" src="imagenes/logotipoRuys.jpg" alt="Logotipo Ruys" width="100" height="100">
-         
-         </a>
+     </a>
 
-         <a href="#lateral" class="header__open">
-            <span class="jam jam-menu"></span>
-         </a>
-
-         <div class="nombre">
-            <h1 class="nombre__logo">RuyS</h1>
-            <h4 class="nombre__logo1">Escuela De Surf</h4>
-         </div>
-           
-        <nav class="nav" id="lateral">
-            <ul class="nav__lista">
-                <li class="nav__item"><a class="nav__enlace" href="index.html" class="underline">Incio</a></li>
-                <li class="nav__item"><a class="nav__enlace" href="pages/clases.html">Clases</a></li>
-                <li class="nav__item"><a class="nav__enlace" href="pages/imagenes.html">Imagenes</a></li>
-                <li class="nav__item"><a class="nav__enlace" href="pages/videos.html">Videos</a></li>
-                <li class="nav__item"><a class="nav__enlace" href="pages/contacto.html">Contacto</a></li>
-                <li class="nav__item"><a class="nav__item--close" href="#"><span class="jam jam-close"></span></a></li>
-            </ul>
-
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">RuyS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pages/clases.html">Clases</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="pages/imagenes.html">Imagenes</a></li>
+                    <li><a class="dropdown-item" href="pages/videos.html">videos</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="pages/contacto.html">Contacto</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Disabled</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
         </nav>
-        
+      
+
+         
+    
     </header>
     <main>
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">RuyS</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Clases</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Menu
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Imagenes</a></li>
-                      <li><a class="dropdown-item" href="#">videos</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Contacto</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                  </li>
-                </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-          </nav>
-
-
-        <section class="section0">
+      
+      <section class="section0">
                  <div class="container">
                      <div class="row">
                      <div class="col-12 col-md-6">
@@ -104,7 +84,9 @@
             <div class="seccion__flex">
                 <div class="seccion__item">
                 <h3 class="seccion__titulo">Nosotros</h3>
+                <div class="texto">
                 <p class="seccion__parrafo">RuyS Surf es una escuela de los principales deportes practicados en olas y playas. Nuestros objetivos son formar a niños, adolescentes, jóvenes y adultos de todas las edades para actividades deportivas como surf, bodyboard, Stand up Paddle e iniciación a los principios del mar, así como entrenamiento funcional para estas prácticas. El sueño de cada alumno es nuestro compromiso que promueve nuestro propio desarrollo.</p>
+                </div>
                 <a class="seccion__conocenos" href="/pages/imagenes.html">Conocenos</a>
                 </div>
             </div>
@@ -116,10 +98,13 @@
             <div class="seccion1__flex"> 
             <div class="seccion1__item">   
             <h3 class="seccion1__titulo">Inscripciones a clases</h3>
+            <div class="texto">
             <p class="seccion1__parrafo">Nuestras clases tienen una duración de 01:30min, en grupos reducidos con uno o más profesores, dependiendo del número de alumnos.
                 Las clases comienzan con un calentamiento físico, técnico y táctico con pautas para el mejor aprovechamiento de los alumnos.
                 Luego comenzando con las prácticas en el mar y siempre buscando la evolución de los alumnos.</p>
+            </div>
             <a class="seccion1__ReservaTuClase" href="/pages/clases.html">Reserva tu clase</a>
+            </div>
             </div>
 
         </section>
@@ -146,3 +131,29 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+
+
+
+
+<!--<a href="#lateral" class="header__open">
+  <span class="jam jam-menu"></span>
+</a>
+
+<div class="nombre">
+  <h1 class="nombre__logo">RuyS</h1>
+  <h4 class="nombre__logo1">Escuela De Surf</h4>
+</div>
+ 
+<nav class="nav" id="lateral">
+  <ul class="nav__lista">
+      <li class="nav__item"><a class="nav__enlace" href="index.html" class="underline">Incio</a></li>
+      <li class="nav__item"><a class="nav__enlace" href="pages/clases.html">Clases</a></li>
+      <li class="nav__item"><a class="nav__enlace" href="pages/imagenes.html">Imagenes</a></li>
+      <li class="nav__item"><a class="nav__enlace" href="pages/videos.html">Videos</a></li>
+      <li class="nav__item"><a class="nav__enlace" href="pages/contacto.html">Contacto</a></li>
+      <li class="nav__item"><a class="nav__item--close" href="#"><span class="jam jam-close"></span></a></li>
+  </ul>
+
+</nav>-->

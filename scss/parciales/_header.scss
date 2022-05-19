@@ -25,7 +25,7 @@
 }
 
 
-.nombre {
+/*.nombre {
     border: 1px solid orange;
     border: none;
     color: grey;
@@ -56,15 +56,15 @@
 .nav {
     padding: 1rem;
     
-}
+}*/
 
-.nav__lista {
+/*.nav__lista {
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
-    /*gap: 16px;*/
+    /*gap: 16px;
 }
 
 .nav__item {
@@ -84,4 +84,32 @@
 
 .nav__item--close {
     display: none;
+}*/
+
+.container-fluid {
+    background-color: $color-principal;
+       
 }
+
+.navbar-light .navbar-brand {
+    color: white !important;
+    
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white !important;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: white;
+}
+
+.bg-light {
+    --bs-bg-opacity: 0;
+    background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
+}
+
