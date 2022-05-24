@@ -1,0 +1,13 @@
+$redes: (
+    twitter: blanco,
+    facebook: azul,
+    instagram: arena,
+    youtube: rojo
+);
+
+@each $twitter, $blanco in $redes {
+    .btn-#{$twitter} {
+        background-color: chocolate;
+    }
+}
+
