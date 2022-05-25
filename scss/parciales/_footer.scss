@@ -5,11 +5,11 @@
 
 }
 
-.footer__marca {
+/*.footer__marca {
     width: 100px;
     height: 100px;
 
-}
+}*/
 
 .parrafo__ds {
     text-align: center;
@@ -23,6 +23,23 @@
     text-decoration: none;
     color: white;
 
+}
 
+a:hover {
+    color: inherit;
+    
+}
+
+
+.jam-whatsapp:before {
+    color: green;
+}
+
+.jam-youtube:before {
+    color: red;
+}
+
+.jam-instagram:before {
+    color: chocolate;
 }
 

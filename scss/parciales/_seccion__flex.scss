@@ -33,7 +33,7 @@
     text-align: center;
 }
 
-.seccion__titulo {
+/*.seccion__titulo {
     color: white;
     text-align: center;
     font-size: 30px;
@@ -50,7 +50,7 @@
     font-size: 20px;
     margin-bottom: 3rem;
 
-}
+}*/
 
 .seccion__conocenos {
     border: 2px solid gold;
@@ -65,10 +65,11 @@
     border-radius: 2rem;
     margin-bottom: 4rem;
     overflow: hidden;
+    margin: 0.5rem;
 
 }
 
-.seccion__titulo--1 {
+/*.seccion__titulo--1 {
     align-self: flex-end;
 
 }
@@ -81,7 +82,7 @@
     background-color: transparent;
     text-decoration-color: transparent;
     
-}
+}*/
 
 .section0 {
     background-color: blue;
@@ -89,4 +90,25 @@
     text-align: justify;
     padding: 30px 0;
 }
+
+.sectionnosotros {
+    border-top: 0.1rem solid;
+    text-align: center;
+    align-content: center;
+}
+
+.titulo {
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.parrafo {
+    color: white;
+    text-align: justify;
+}
+
+
+
+
 

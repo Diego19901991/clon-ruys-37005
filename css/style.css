@@ -2,11 +2,11 @@
 /* importando todos los parciales de mis estilos */
 /* aclaracion es importante el orden de importacion */
 .btn-twitter {
-  background-color: chocolate;
+  background-color: white;
 }
 
-.btn-facebook {
-  background-color: chocolate;
+.btn-whatsapp {
+  background-color: green;
 }
 
 .btn-instagram {
@@ -14,7 +14,7 @@
 }
 
 .btn-youtube {
-  background-color: chocolate;
+  background-color: red;
 }
 
 /* como creo una variable en SASS:
@@ -172,11 +172,11 @@ ul {
   padding: 1rem;
 }
 
-.footer__marca {
-  width: 100px;
-  height: 100px;
-}
+/*.footer__marca {
+    width: 100px;
+    height: 100px;
 
+}*/
 .parrafo__ds {
   text-align: center;
   font-size: 12px;
@@ -186,7 +186,22 @@ ul {
 .footer__redes {
   text-decoration: none;
   color: white;
-  padding-left: 70rem;
+}
+
+a:hover {
+  color: inherit;
+}
+
+.jam-whatsapp:before {
+  color: green;
+}
+
+.jam-youtube:before {
+  color: red;
+}
+
+.jam-instagram:before {
+  color: chocolate;
 }
 
 .seccion__flex {
@@ -220,23 +235,24 @@ ul {
   text-align: center;
 }
 
-.seccion__titulo {
-  color: white;
-  text-align: center;
-  font-size: 30px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+/*.seccion__titulo {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
 }
 
 .seccion__parrafo {
-  color: #FFF9EE;
-  font-weight: bold;
-  text-align: justify;
-  font-weight: bolder;
-  font-size: 20px;
-  margin-bottom: 3rem;
-}
+    color: #FFF9EE;
+    font-weight: bold;
+    text-align: justify;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-bottom: 3rem;
 
+}*/
 .seccion__conocenos {
   border: 2px solid gold;
   background-color: gold;
@@ -250,21 +266,23 @@ ul {
   border-radius: 2rem;
   margin-bottom: 4rem;
   overflow: hidden;
+  margin: 0.5rem;
 }
 
-.seccion__titulo--1 {
-  align-self: flex-end;
+/*.seccion__titulo--1 {
+    align-self: flex-end;
+
 }
 
 .seccion__parrafo--2 {
-  align-self: flex-end;
+    align-self: flex-end;
 }
 
 .texto {
-  background-color: transparent;
-  text-decoration-color: transparent;
-}
-
+    background-color: transparent;
+    text-decoration-color: transparent;
+    
+}*/
 .section0 {
   background-color: blue;
   color: white;
@@ -272,25 +290,44 @@ ul {
   padding: 30px 0;
 }
 
-.seccion1__flex {
-  width: 100%;
-  border: 1px solid grey;
-  padding: 1rem;
-  background-color: blue;
-  color: white;
-  min-height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  /*align-items: flex-end;*/
-  /*flex-wrap: wrap;
-    flex-flow: column wrap;
-    align-content: center;*/
-  background-image: url(../imagenes/nombreDeImagenEscuelaNumeroDos.jpg);
-  background-size: cover;
-  background-attachment: local;
+.sectionnosotros {
+  border-top: 0.1rem solid;
+  text-align: center;
+  align-content: center;
 }
 
+.titulo {
+  color: white;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.parrafo {
+  color: white;
+  text-align: justify;
+}
+
+/*.seccion1__flex {
+    width: 100%;
+    border: 1px solid grey;
+    padding: 1rem;
+    background-color: blue;
+    color:white;
+    min-height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /*align-items: flex-end;*/
+/*flex-wrap: wrap;
+    flex-flow: column wrap;
+    align-content: center;*/
+/*background-image: url(../imagenes/nombreDeImagenEscuelaNumeroDos.jpg);
+    background-size: cover;
+    background-attachment: local;
+
+    
+}*/
 .seccion1__item {
   border: 1px solid orange;
   border: none;
@@ -300,23 +337,23 @@ ul {
   text-align: center;
 }
 
-.seccion1__titulo {
-  color: white;
-  text-align: center;
-  font-size: 30px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+/*.seccion1__titulo {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .seccion1__parrafo {
-  color: white;
-  font-weight: bold;
-  text-align: justify;
-  font-weight: bolder;
-  font-size: 20px;
-  margin-bottom: 3rem;
-}
+    color: white;
+    font-weight: bold;
+    text-align: justify;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-bottom: 3rem;
 
+}*/
 .seccion1__ReservaTuClase {
   border: 2px solid gold;
   background-color: gold;
@@ -335,6 +372,23 @@ ul {
 .texto {
   background-color: transparent;
   text-decoration-color: transparent;
+}
+
+.Inscripcionesaclases {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.titulouno {
+  color: white;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.parrafouno {
+  color: white;
+  text-align: justify;
+  margin-top: 1rem;
 }
 
 .flex {
@@ -429,8 +483,7 @@ ul {
   grid-template-rows: 100px 100px;
   /*grid-template-rows: 1fr 2fr;*/
   grid-template-rows: 50% 50%;
-  grid-template-areas: "ele1 ele1" 
- "ele2 ele2";
+  grid-template-areas: "ele1 ele1"  "ele2 ele2";
   justify-items: stretch;
   align-items: stretch;
   justify-content: space-around;
@@ -518,9 +571,7 @@ ul {
   grid-template-rows: 25% 25% 100px;
   grid-template-rows: 1fr 2fr 1fr;
   grid-template-rows: 200px 200px 200px;
-  grid-template-areas: "ele1 ele2 ele2" 
- "ele3 ele3 ele4" 
- "ele5 ele6 ele4";
+  grid-template-areas: "ele1 ele2 ele2"  "ele3 ele3 ele4"  "ele5 ele6 ele4";
   justify-items: stretch;
   align-items: stretch;
   justify-content: flex-start;
