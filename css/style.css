@@ -186,6 +186,9 @@ ul {
 .footer__redes {
   text-decoration: none;
   color: white;
+  display: block;
+  padding-left: 91%;
+  margin-bottom: 1rem;
 }
 
 a:hover {
@@ -783,6 +786,11 @@ a:hover {
     min-height: 100%;
     padding: 1rem;
   }
+  .footer__redes {
+    display: block;
+    padding-left: 81%;
+    margin-bottom: 0.5rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -828,6 +836,14 @@ a:hover {
     width: 100px;
     font-size: small;
   }
+  .navbar-light .navbar-toggler-icon {
+    margin-right: 1rem;
+  }
+  .navbar-toggler-icon {
+    width: 1em;
+    height: 1em;
+    border-radius: 0.3rem;
+  }
   /*.nav {
         display: none;
     }*/
@@ -840,6 +856,11 @@ a:hover {
     }*/
   .footer {
     flex-direction: column;
+  }
+  .footer__redes {
+    display: block;
+    padding-left: 75%;
+    margin-bottom: 1rem;
   }
   /*#lateral {
         display: block;

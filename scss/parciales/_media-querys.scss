@@ -56,6 +56,13 @@
     
     }
 
+    .footer__redes {
+        display: block;
+        padding-left: 81%;
+        margin-bottom: 0.5rem;
+    
+    }
+
 
 }
 
@@ -117,6 +124,16 @@
 
     }
 
+    .navbar-light .navbar-toggler-icon {
+        margin-right: 1rem;
+    }
+
+    .navbar-toggler-icon {
+        width: 1em;
+        height: 1em;
+        border-radius: 0.3rem;
+    }
+
     
 
     /*.nav {
@@ -133,6 +150,13 @@
 
     .footer {
         flex-direction: column;
+    }
+
+    .footer__redes {
+        display: block;
+        padding-left: 75%;
+        margin-bottom: 1rem;
+    
     }
 
     /*#lateral {
