@@ -3,7 +3,7 @@
     padding: 1rem;
     min-width: 500px;
 
-    display: flex;
+    display: block;
 
     flex-direction: column;
     justify-content: space-between;
@@ -78,6 +78,7 @@
 .informacion_parrafo {
     font-style: italic;
     font-size: 30;
+    margin-bottom: 0;
     
 }
 

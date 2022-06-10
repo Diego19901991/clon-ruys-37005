@@ -403,7 +403,7 @@ a:hover {
   border: 2px solid white;
   padding: 1rem;
   min-width: 500px;
-  display: flex;
+  display: block;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -469,6 +469,7 @@ a:hover {
 .informacion_parrafo {
   font-style: italic;
   font-size: 30;
+  margin-bottom: 0;
 }
 
 .flexformulario {
@@ -921,7 +922,6 @@ a:hover {
     margin-bottom: 0.5rem;
     padding: 0;
     margin-left: 4rem;
-    margin-right: 4rem;
   }
   .grid__aprender {
     border: none;
@@ -934,6 +934,14 @@ a:hover {
   }
   .w-100 {
     height: 200px;
+  }
+  .flex__enviar {
+    width: 200px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  .titulo {
+    margin-top: 0;
   }
 }
 
